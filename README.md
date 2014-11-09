@@ -25,11 +25,11 @@ to the `require` section of your application `composer.json` file.
 ```php
 require('vendor/autoload.php');
 
-$api = new \kotchuprik\brainstorage\Client();
+$client = new \kotchuprik\brainstorage\Client();
 
 // Getting jobs on the page
-$items = $api->getItems();
+$items = $client->getItems();
 
 // Getting the job description
-var_export($api->getItem(reset($items)['url']));
+var_export($client->getItem(reset($items)['id']));
 ```
