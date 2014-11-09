@@ -1,0 +1,20 @@
+{
+    "name": "kotchuprik/php-brainstorage",
+    "description": "Unofficial Brainstorage Library based on parsing",
+    "require": {
+        "sleeping-owl/apist": "1.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Constantin Chuprik",
+            "email": "constantinchuprik@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "kotchuprik\\brainstorage\\": ""
+        }
+    },
+    "minimum-stability": "dev"
+}
