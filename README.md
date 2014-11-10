@@ -1,6 +1,6 @@
 # Brainstorage PHP Library
 
-Unofficial Brainstorage PHP Library based on parsing with the use [sleeping-owl/apist](https://github.com/sleeping-owl/apist)
+Unofficial [Brainstorage](http://brainstorage.me) PHP Library based on parsing with the use [sleeping-owl/apist](https://github.com/sleeping-owl/apist)
 
 ## Installation
 
@@ -27,8 +27,10 @@ require('vendor/autoload.php');
 
 $client = new \kotchuprik\brainstorage\Client();
 
+$page = 1;
+
 // Getting jobs on the page
-$items = $client->getItems();
+$items = $client->getItems($page);
 
 // Getting the job description
 var_export($client->getItem(reset($items)['id']));
