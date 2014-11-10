@@ -27,9 +27,8 @@ require('vendor/autoload.php');
 
 $client = new \kotchuprik\brainstorage\Client();
 
-$page = 1;
-
 // Getting jobs on the page
+$page = 1;
 $items = $client->getItems($page);
 
 // Getting the job description
